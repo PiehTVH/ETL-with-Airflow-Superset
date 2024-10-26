@@ -1,0 +1,24 @@
+[2024-10-26 08:57:54,726] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: ETL_task.crawl_data 2024-10-26T08:51:20.322161+00:00 [queued]>
+[2024-10-26 08:57:54,737] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: ETL_task.crawl_data 2024-10-26T08:51:20.322161+00:00 [queued]>
+[2024-10-26 08:57:54,738] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-26 08:57:54,738] {taskinstance.py:1088} INFO - Starting attempt 2 of 2
+[2024-10-26 08:57:54,738] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-26 08:57:54,744] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): crawl_data> on 2024-10-26T08:51:20.322161+00:00
+[2024-10-26 08:57:54,747] {standard_task_runner.py:52} INFO - Started process 935 to run task
+[2024-10-26 08:57:54,750] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'ETL_task', 'crawl_data', '2024-10-26T08:51:20.322161+00:00', '--job-id', '6', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmpq13z5fsd', '--error-file', '/tmp/tmp9o5tu2pv']
+[2024-10-26 08:57:54,752] {standard_task_runner.py:77} INFO - Job 6: Subtask crawl_data
+[2024-10-26 08:57:54,778] {logging_mixin.py:104} INFO - Running <TaskInstance: ETL_task.crawl_data 2024-10-26T08:51:20.322161+00:00 [running]> on host ceff2ee9e0e7
+[2024-10-26 08:57:54,808] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=thanhdera@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ETL_task
+AIRFLOW_CTX_TASK_ID=crawl_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-10-26T08:51:20.322161+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-10-26T08:51:20.322161+00:00
+[2024-10-26 08:57:55,303] {logging_mixin.py:104} INFO - Request failed with status code 429
+[2024-10-26 08:57:55,304] {python.py:151} INFO - Done. Returned value was: None
+[2024-10-26 08:57:55,312] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=ETL_task, task_id=crawl_data, execution_date=20241026T085120, start_date=20241026T085754, end_date=20241026T085755
+[2024-10-26 08:57:55,333] {taskinstance.py:1265} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-26 08:57:55,364] {local_task_job.py:149} INFO - Task exited with return code 0
